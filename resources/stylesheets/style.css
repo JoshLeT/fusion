@@ -1,0 +1,97 @@
+/* Universal Styling */
+
+html {
+  font-size: 16px;
+  font-family: '', serif;
+}
+
+section {
+  width: 100%;
+}
+
+body section:nth-child(even) {
+  background-color: #687083;
+}
+
+h1  {
+  font-family: '', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1B202B;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: '', sans-serif;
+  font-weight: 400;
+  color: #C5CAD7;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+h5 {
+  font-family: '', sans-serif;
+  font-weight: 700;
+  color: #1B202B;
+  font-size: 2rem;
+}
+
+h6 {
+  font-family: '', sans-serif;
+  font-weight: 400;
+  color: #1B202B;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #687083;
+
+}
+
+/* Universal Styling @1024px */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* Universal Styling @768px */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Header Styling */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Banner Styling */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Footer Styling */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
