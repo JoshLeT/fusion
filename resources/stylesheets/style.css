@@ -66,10 +66,75 @@ p {
 
 }
 
+/* Social Styling */
+
+.social-top {
+  height: 64px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: darkgrey;
+  border-bottom: 1px solid black;
+}
+
+.social-container {
+  width: 1200px;
+}
+
+.social-container a {
+  padding-left: 24px;
+}
+
 /* Header Styling */
 
+header {
+  background-color: dimgrey;
+  height: 96px;
+  text-transform: uppercase;
+}
+
+.header-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.logo img {
+  width: 64px;
+  height: auto;
+  margin-left: 64px;
+}
+
+#fusion-logo {
+  color: white;
+  text-transform: uppercase;
+}
+
+.desktop-navigation ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.desktop-navigation ul li a {
+  padding-left: 24px;
+  color: white;
+}
+
+.desktop-navigation {
+
+}
+
 .mobile-navigation {
-  visibility: hidden;
+  display: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -91,6 +156,17 @@ p {
 }
 
 /* Footer Styling */
+
+footer {
+  height: 64px;
+  background-color: darkgrey;
+  border-top: 1px solid black;
+}
+
+.footer-container {
+  width: 1200px;
+  margin-top: 32px;
+}
 
 @media only screen and (max-width: 1024px) {
 
