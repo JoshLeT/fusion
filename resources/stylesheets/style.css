@@ -155,6 +155,55 @@ header {
 
 }
 
+/* Features Section Styling */
+
+.features {
+  display: block;
+}
+
+.featues h2 {
+  width: 100%;
+  text-align: center;
+  padding-top: ;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px 64px 32px 64px;
+}
+
+.feature-holder {
+  width: 260px;
+  background-color: white;
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
+.feature-holder img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.feature-holder .textbox {
+  width: 220px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.textbox {
+  margin-right: 16px
+}
+
+.textbox h4 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
 /* Footer Styling */
 
 footer {
