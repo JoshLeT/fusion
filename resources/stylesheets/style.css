@@ -76,6 +76,7 @@ p {
   align-items: center;
   background-color: darkgrey;
   border-bottom: 1px solid black;
+  /*position: fixed; */
 }
 
 .social-container {
