@@ -1,8 +1,9 @@
 /* Universal Styling */
 
 html {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-family: '', serif;
+  width: 100%;
 }
 
 section {
@@ -155,6 +156,27 @@ header {
 
 }
 
+/* Mailing Section Styling */
+
+.mailing-list {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mailing-list h3 {
+  text-align: center;
+  background-color: lightpink;
+  border-radius: 1.5rem;
+  padding: 0.4rem;
+}
+
+.mailing-list h3:hover {
+  color: white;
+  background-color: blue  ;
+}
+
 /* Features Section Styling */
 
 .features {
@@ -175,10 +197,16 @@ header {
 }
 
 .feature-holder {
-  width: 260px;
+  width: 30%;
   background-color: white;
   margin-right: 32px;
   margin-bottom: 16px;
+  transition: all 0.5s ease-out;
+}
+
+.feature-holder:hover {
+  width: 30.5%;
+  margin: 0.9rem;
 }
 
 .feature-holder img {
@@ -188,7 +216,6 @@ header {
 }
 
 .feature-holder .textbox {
-  width: 220px;
   height: 120px;
   display: flex;
   flex-direction: column;
@@ -205,6 +232,7 @@ header {
 }
 
 /* Video Styling */
+
 
 
 /* Footer Styling */
