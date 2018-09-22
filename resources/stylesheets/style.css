@@ -149,6 +149,22 @@ header {
 
 /* Banner Styling */
 
+.banner {
+
+}
+
+.banner-img1 {
+  background-image: url("../images/slider-1.jpg");
+}
+
+.banner-img2 {
+  background-image: url(../images/slider-2.jpg);
+}
+
+.banner-img3 {
+  background-image: url(../images/slider-3.jpg);
+}
+
 @media only screen and (max-width: 1024px) {
 
 }
