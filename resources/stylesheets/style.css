@@ -76,15 +76,26 @@ p {
   align-items: center;
   background-color: darkgrey;
   border-bottom: 1px solid black;
-  /*position: fixed; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 10;
 }
 
 .social-container {
   width: 1200px;
+  margin: 0 auto;
 }
 
 .social-container a {
   padding-left: 24px;
+  float: right;
+  transition: all 0.25s ease-out;
+}
+
+.social-container a:hover {
+  color: white;
 }
 
 /* Header Styling */
@@ -93,10 +104,18 @@ header {
   background-color: dimgrey;
   height: 96px;
   text-transform: uppercase;
+  position: absolute;
+  top: 64px;
+  bottom: 64px;
+  left: 0px;
+  right: 0px;
+  overflow: auto;
+  z-index: 2;
 }
 
 .header-container {
   width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,11 +143,16 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding-left: 24px;
+  float: right;
 }
 
 .desktop-navigation ul li a {
   padding-left: 24px;
   color: white;
+}
+
+.desktop-navigation ul li a:hover {
+  text-decoration: underline;
 }
 
 .desktop-navigation {
@@ -150,19 +174,13 @@ header {
 /* Banner Styling */
 
 .banner {
-
+  width: 100%;
+  display: flex;
 }
 
-.banner-img1 {
-  background-image: url("../images/slider-1.jpg");
-}
-
-.banner-img2 {
-  background-image: url(../images/slider-2.jpg);
-}
-
-.banner-img3 {
-  background-image: url(../images/slider-3.jpg);
+.banner-img {
+  width: auto;
+  height: 640px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -180,30 +198,45 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  border-bottom: 1px solid white;
 }
 
 .mailing-list h3 {
   text-align: center;
-  background-color: lightpink;
+  font-size: 1.2rem;
+  background-color: white;
   border-radius: 1.5rem;
   padding: 0.4rem;
 }
 
 .mailing-list h3:hover {
   color: white;
-  background-color: blue  ;
+  background-color: black;
+  border-radius: 1.5rem;
+  border-color: white;
 }
 
 /* Features Section Styling */
 
+.features-section {
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+
 .features {
+  width: 1200px;
+  margin: 0 auto;
   display: block;
 }
 
-.featues h2 {
-  width: 100%;
+.features h2 {
+  color: white;
   text-align: center;
-  padding-top: ;
+  padding-top: 40px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .feature-container {
@@ -215,10 +248,11 @@ header {
 
 .feature-holder {
   width: 30%;
-  background-color: white;
+  background-color: lightgrey;
   margin-right: 32px;
   margin-bottom: 16px;
-  transition: all 0.5s ease-out;
+  transition: all 0.6s ease-out;
+  border: 1px solid white;
 }
 
 .feature-holder:hover {
@@ -250,19 +284,32 @@ header {
 
 /* Video Styling */
 
+.video-section {
+  background-color: black;
+}
+
+.video-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 
 /* Footer Styling */
 
 footer {
-  height: 64px;
+  height: 96px;
   background-color: darkgrey;
   border-top: 1px solid black;
 }
 
 .footer-container {
   width: 1200px;
-  margin-top: 32px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.footer-container nav {
+  float: right;
 }
 
 @media only screen and (max-width: 1024px) {
