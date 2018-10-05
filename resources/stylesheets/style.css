@@ -124,18 +124,14 @@ header {
 .logo {
   display: inline-flex;
   align-items: center;
-  vertical-align: middle;
+  margin-left: 24px;
 }
 
 .logo img {
   width: 64px;
   height: auto;
-  margin-left: 64px;
-}
-
-#fusion-logo {
-  color: white;
-  text-transform: uppercase;
+  margin-top: 12px;
+  margin-left: 12px;
 }
 
 .desktop-navigation ul {
@@ -180,7 +176,7 @@ header {
 
 .banner-img {
   width: auto;
-  height: 640px;
+  height: 600px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -193,16 +189,18 @@ header {
 
 /* Mailing Section Styling */
 
-.mailing-list {
+.mailing-list1 {
   height: 80px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: black;
   border-bottom: 1px solid white;
 }
 
-.mailing-list h3 {
+.mailing-list1 h3 {
+  display: none;
+  visibility: hidden;
   text-align: center;
   font-size: 1.2rem;
   background-color: white;
@@ -210,7 +208,7 @@ header {
   padding: 0.4rem;
 }
 
-.mailing-list h3:hover {
+.mailing-list1 h3:hover {
   color: white;
   background-color: black;
   border-radius: 1.5rem;
@@ -264,7 +262,16 @@ header {
   width: 100%;
   height: auto;
   margin-bottom: 16px;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  transition: all 0.6s ease-out;
 }
+
+.feature-holder img:hover {
+filter: none;
+-webkit-filter: grayscale(0%);
+}
+
 
 .feature-holder .textbox {
   height: 120px;
@@ -280,6 +287,34 @@ header {
 .textbox h4 {
   margin-bottom: 8px;
   text-align: center;
+  text-decoration: underline;
+}
+
+/* Mailing Section Styling */
+
+.mailing-list {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+
+.mailing-list h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 0.4rem;
+  transition: all 0.25s ease-out;
+}
+
+.mailing-list h3:hover {
+  color: white;
+  background-color: dimgrey;
+  border-radius: 1.5rem;
+  border-color: white;
 }
 
 /* Video Styling */
@@ -297,9 +332,10 @@ header {
 /* Footer Styling */
 
 footer {
-  height: 96px;
-  background-color: darkgrey;
+  height: 120px;
+  background-color: dimgrey;
   border-top: 1px solid black;
+  color: white;
 }
 
 .footer-container {
@@ -308,8 +344,16 @@ footer {
   padding-top: 16px;
 }
 
+.footer-container span a {
+  color: white;
+}
+
 .footer-container nav {
   float: right;
+}
+
+.footer-container nav li a {
+  color: white;
 }
 
 @media only screen and (max-width: 1024px) {
